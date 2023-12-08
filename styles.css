@@ -1,0 +1,85 @@
+/* styles.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+.search-option {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    font-size: 14px;
+    width: 185px;
+    /* Remove border */
+    border-width: 0px;
+    border-radius: 15px;
+    margin: 20px;
+  }
+  input[type=submit]:hover {
+    /* Add box-shadow when hovering button (border adds space) */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+  }
+
+
+
+/* Style for the links in the upper-right corner */
+.upper-right-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.upper-right-links a {
+    margin-left: 10px;
+    padding: 5px 10px; /* Add padding to separate the links */
+    text-decoration: none;
+    color: #4285F4; /* Google's link color */
+}
+
+.upper-right-links a:hover {
+    text-decoration: underline;
+}
+
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    /* Align the search container in the center of the viewport */
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+  }
+  .search-container .search-field {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    border: 1px solid #afafaf;
+    align-items: center;
+    margin: 10px;
+    padding-left: 15px;
+  }
+  .search-container .search-field input {
+    border: none;
+    border-radius: 25px;
+  }
+  .search-container .logo-subtext {
+    color: #4285f4;
+    position: relative;
+    left: 110px;
+    top: -18px;
+  }
